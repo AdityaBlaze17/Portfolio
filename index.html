@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Aditya'sPortfolio Website</title>
+</head>
+<body>
+    <header class="flex-row">
+        <a class="logo-header" href="index.html">Aditya Chouhan</a>
+        <nav class="nav-bar">
+            <ul class="flex-row menu">
+                <button class="hamburger-close"><img src="./images/xIcon.png" alt=""></button>    
+                <li class="link-portfolio">
+                    <a href="#portfolio"><p>Portfolio</p></a>
+                </li>
+                <li class="link-about">
+                    <a href="#about"><p>About</p></a>
+                </li>
+                <li class="link-contact">
+                    <a href="#contact"><p>Contact</p></a>
+                    <img  class="email-icon" src="./images/IconMail.svg" alt="email-icon">
+                </li>                                    
+            </ul>                
+            <button class="hamburger-btn"><img src="./images/Union.svg" alt="hamburger-icon"></button>
+                
+        </nav>
+    </header>
+    <main>       
+        <section class="headline flex-col">
+            <div class="title-headline">
+                <h1>Hey There.<br> I’m Aditya.</h1>
+            </div>
+            <div class="subtitle-headline">
+                <h2>I'm a web developer</h2>
+            </div>
+            <br>
+            <div class="description-headline">
+                <p>I can help you build a product , feature or website . don’t hesitate to contact me.</p>
+            </div>
+            <br>
+            <ul class="social-link flex-row">
+                <li><a href="https://github.com/CesarHerr"><img src="./images/git.svg" alt="github-icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/aditya-chouhan-8180a9230/"><img src="./images/Lin.svg" alt="linkedin-icon"></a></li>
+                <li><a href=""><img src="./images/Mano.svg" alt="angellist-icon"></a></li>
+
+                <li><a href=""><img src="./images/M.svg" alt="medium-icon"></a></li>
+            </ul>            
+        </section>
+
+        <section class="works" id="portfolio">
+            <div class="works-header flex-col">
+                <div class="title-works-desktop flex-row">
+                    <h2>My Recent Works</h2>
+                    <img class="work-line" src="./images/lineVector.svg" alt="horizontal-line">
+                </div>                             
+                    <img class="works-img" src="./images/CapstoneHiking.png" alt="Hiking-page">                
+                <h3>Hiking and Adventure Sports </h3>                
+                <p>This website is an irresistible invitation to discover a paradise of thrills and excitement! Immerse yourself in the grandeur of towering mountains, explore crystal-clear lakes, conquer raging river rapids, and challenge the mighty presence of volcanoes.</p>
+                <ul class="flex-row box-header">
+                    <li><p>HTML</p></li>
+                    <li><p>JavaScript</p></li>
+                    <li><p>SASS</p></li>
+                </ul>
+                <button class="see-btn see-desktop">See project</button>
+                <button class="see-btn see-mobile">See project</button>
+            </div>                        
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-head flex-col">
+                <h2>About me</h2>
+                <p>Hey there! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+                <button class="get-my-resume-btn">Get my resume</button>
+            </div>
+            <div class="about-body flex-col">   
+                <ul class="skills flex-col" id="knowledge">
+                    <li>
+                        <ul>
+                            <li class="list-icon"><img src="./images/Rectangle6.svg" alt="rhumbus-icon"><h3>  Language</h3></li>                            
+                            <li>JavaScript</li>
+                            <li>Ruby</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>  
+                            <li class="list-icon"><img src="./images/Rectangle.svg" alt="rectangle-icon"><h3>  Frameworks</h3></li>                            
+                            <li>React.js</li>
+                            <li>Ruby on Rails</li>
+                            <li>RSpec</li>
+                            <li>Capybara</li>  
+                            <li>Selenium</li>                       
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>    
+                            <li class="list-icon"><img src="./images/Rectangle5.svg" alt="circle-icon"><h3> Skills</h3></li>                            
+                            <li>Database Management</li>
+                            <li>Version Control</li>
+                            <li>CLI</li>
+                            <li>API Design</li>
+                            <li>Web Development</li>                                 
+                        </ul>
+                    </li>
+                </ul>
+            </div>                        
+        </section>
+
+        <section class="contact_form flex-col" id="contact">
+            <div class="contact_title">
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>            
+            </div>
+            <form class="flex-col" action="https://formspree.io/f/myyanyge" method="post" id="form">
+                <ul class="inputs-form">
+                    <li>
+                        <label for="name" aria-labelledby="name">Name</label>               
+                            <input type="text" name="name" id="name" placeholder="    Full name" maxlength="30" required>                    
+                    </li>
+                    <li class="message-error">
+                        <label for="email" aria-labelledby="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="    Email address" required>                    
+                    </li>
+                    <label class="textarea" for="text-area" aria-labelledby="text-area" >text area</label>
+                    <textarea  id="textarea" placeholder="  Write me something...." maxlength="500" required></textarea>                
+                </ul>
+                <button class="contact_button">Get in touch</button>          
+            </form>
+            <hr>
+        </section>
+
+            <footer>
+                <ul class="flex-row icons-footer">
+                    <li><a href="https://github.com/CesarHerr"><img src="./images/gitBlack.svg" alt="github-icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/cesarherr"><img src="./images/LinkedBlack.svg" alt="linkedin-icon"></a></li>
+                    <li><a href=""><img src="./images/handBlack.svg" alt="angellist-icon"></a></li>
+                    <li><a href="https://twitter.com/Cesarherr2"><img src="./images/TwitterBlack.svg" alt="twitter-icon"></a></li>
+                    <li><a href=""><img src="./images/mBlack.svg" alt="medium-icon"></a></li>
+                </ul>
+                <img class="line" src="./images/Shape.svg" alt="horizontal-line">
+            </footer>        
+    </main>
+    <script src="./js/menu.js"></script>
+    <script src="./js/popup.js"></script>    
+    <script src="./js/formV.js"></script>
+    <script src="./js/storage.js"></script>
+</body>
+</html>
